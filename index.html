@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ronash Sharma — Data Analyst / AI-ML Engineer</title>
+<meta name="description" content="Portfolio of Ronash Sharma — Data Science, Analytics, and AI/ML projects, resume, and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <span class="topbar__mark">RS</span>
+  <nav class="topbar__nav">
+    <a href="#projects">projects</a>
+    <a href="#skills">skills</a>
+    <a href="#resume">resume</a>
+    <a href="#contact">contact</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO: dataframe-row signature element -->
+  <section class="hero">
+    <div class="hero__row" id="heroRow" aria-label="profile summary">
+      <span class="hero__field"><span class="hero__key">name</span><span class="hero__val" id="heroName">—</span></span>
+      <span class="hero__field"><span class="hero__key">role</span><span class="hero__val" id="heroRole">—</span></span>
+      <span class="hero__field"><span class="hero__key">location</span><span class="hero__val" id="heroLocation">—</span></span>
+      <span class="hero__field"><span class="hero__key">status</span><span class="hero__val hero__status" id="heroStatus">—<span class="cursor" aria-hidden="true"></span></span></span>
+    </div>
+    <h1 class="hero__headline" id="heroHeadline">Loading profile…</h1>
+    <p class="hero__summary" id="heroSummary"></p>
+    <div class="hero__cta">
+      <a href="#projects" class="btn btn--primary">See projects</a>
+      <a href="#resume" class="btn btn--ghost">Get resume</a>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section-band section">
+    <p class="section__label"># projects</p>
+    <h2 class="section__title">What I've actually shipped</h2>
+    <div class="projects__grid" id="projectsGrid"></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-band section">
+    <p class="section__label"># skills</p>
+    <h2 class="section__title">Stack</h2>
+    <div class="skills__grid" id="skillsGrid"></div>
+  </section>
+
+  <!-- RESUME / CV -->
+  <section id="resume" class="section-band section section--tight">
+    <p class="section__label"># documents</p>
+    <h2 class="section__title">Resume &amp; CV</h2>
+    <p class="section__note">Resume is the 1-page ATS-tailored version — send this by default. CV is the full-length version with complete history.</p>
+    <div class="docs__row">
+      <a href="assets/Ronash_Sharma_Resume.pdf" class="doc-card" download>
+        <span class="doc-card__label">Resume</span>
+        <span class="doc-card__sub">1-page · tailored · download</span>
+      </a>
+      <a href="assets/Ronash_Sharma_CV.pdf" class="doc-card" download>
+        <span class="doc-card__label">CV</span>
+        <span class="doc-card__sub">full history · download</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-band section section--tight">
+    <p class="section__label"># contact</p>
+    <h2 class="section__title">Reach me</h2>
+    <div class="contact__row" id="contactRow"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Built with plain HTML/CSS/JS, deployed on Vercel. <span id="footerYear"></span></p>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
