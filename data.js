@@ -7,10 +7,10 @@ const PROFILE = {
   role: "Data Analyst / Data Scientist / AI-ML Engineer",
   location: "Kathmandu, Nepal",
   status: "open to internships",
-  headline: "I build data pipelines and ML systems, then ship them as working products — not notebooks.",
+  headline: "I build data pipelines and ML systems, then ship them as working products ,not notebooks.",
   summary:
     "Final-year CSIT student in Kathmandu, focused on data science and machine learning. I've worked " +
-    "through the whole pipeline myself — cleaning messy data, training models, wiring them into an API " +
+    "through the whole pipeline myself:cleaning messy data, training models, wiring them into an API " +
     "or a dashboard someone can actually use. Right now looking for a Data Analyst or Data Science " +
     "internship where I can do that on real problems.",
   email: "sharma.ronash04@gmail.com",
@@ -25,7 +25,7 @@ const PROJECTS = [
     title: "Customer Churn Prediction System",
     tag: "flagship",
     description:
-      "Built a full churn-prediction pipeline from scratch — cleaned and prepped raw customer data, " +
+      "Built a full churn-prediction pipeline from scratch: cleaned and prepped raw customer data, " +
       "trained a Random Forest to flag who's likely to leave, then wrapped it in a Streamlit app that " +
       "shows churn risk in real time. Paired it with a Tableau dashboard so the numbers are actually " +
       "usable by someone non-technical.",
@@ -36,7 +36,7 @@ const PROJECTS = [
     title: "Gemini LLM Application",
     tag: "AI/LLM",
     description:
-      "My first real LLM project — a small app that sends user questions to Google's Gemini API and " +
+      "My first real LLM project ,a small app that sends user questions to Google's Gemini API and " +
       "handles the back-and-forth in real time. Simple on paper, but it's where I actually learned how " +
       "LLM apps are wired together instead of just reading about it.",
     stack: ["Python", "Google Gemini API"],
@@ -47,7 +47,7 @@ const PROJECTS = [
     tag: "data engineering",
     description:
       "Wrote a scraper that pages through an online bookstore, pulls title, price, and currency for " +
-      "every listing, cleans it up, and exports it to JSON. Nothing fancy — just a solid, working data " +
+      "every listing, cleans it up, and exports it to JSON. Nothing fancy:just a solid, working data " +
       "collection pipeline end to end.",
     stack: ["Python", "BeautifulSoup", "Requests", "JSON"],
     link: "https://github.com/RonashSharma/book-price-web-scraper",
@@ -56,7 +56,7 @@ const PROJECTS = [
     title: "Logistic Regression API",
     tag: "backend",
     description:
-      "Took a logistic regression model out of a notebook and turned it into an actual REST API — send " +
+      "Took a logistic regression model out of a notebook and turned it into an actual REST API: send " +
       "a request, get a prediction back. Small project, but it's the one that taught me the gap between " +
       "'model works in a notebook' and 'model works as a service' is where the real work is.",
     stack: ["Python", "Scikit-learn", "REST API"],
@@ -66,7 +66,7 @@ const PROJECTS = [
     title: "Salary Prediction Model",
     tag: "minor",
     description:
-      "A regression model predicting salary from experience and role features — built early on, mostly " +
+      "A regression model predicting salary from experience and role features: built early on, mostly " +
       "to practice the regression workflow.",
     stack: ["Python", "Scikit-learn"],
     link: "https://github.com/RonashSharma/Salary-Prediction",
