@@ -99,39 +99,61 @@ a { color: inherit; text-decoration: none; }
 }
 @keyframes blink { 50% { opacity: 0; } }
 
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.85fr;
+  gap: 56px;
+  align-items: center;
+}
+
 .hero__headline {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(28px, 4.4vw, 42px);
-  line-height: 1.15;
-  margin: 0 0 24px;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.16;
+  margin: 0 0 16px;
   max-width: 22ch;
 }
-
-.hero__main {
-  display: flex;
-  gap: 32px;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-.hero__text { flex: 1; min-width: 260px; }
-
 .hero__summary {
   color: var(--slate);
-  max-width: 62ch;
+  max-width: 58ch;
   font-size: 16px;
   margin: 0 0 28px;
 }
 .hero__cta { display: flex; gap: 12px; flex-wrap: wrap; }
 
-.hero__photo-wrap { flex-shrink: 0; }
+/* Portrait panel with an offset accent block behind it for depth ("aura") */
+.hero__photo-wrap {
+  display: flex;
+  justify-content: center;
+}
+.hero__photo-frame {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 4 / 5;
+}
+.hero__photo-frame::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -16px;
+  width: 100%;
+  height: 100%;
+  background: var(--pulse-dim);
+  border: 1px solid var(--pulse);
+  border-radius: 18px;
+  z-index: 0;
+}
 .hero__photo {
-  width: 116px;
-  height: 116px;
-  border-radius: 14px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 18px;
   border: 1px solid var(--border);
-  box-shadow: 0 2px 10px rgba(12, 15, 22, 0.06);
+  box-shadow: 0 12px 28px rgba(12, 15, 22, 0.10);
   background: var(--paper);
 }
 .hero__photo--fallback {
@@ -140,14 +162,16 @@ a { color: inherit; text-decoration: none; }
   justify-content: center;
   font-family: var(--font-mono);
   font-weight: 600;
-  font-size: 30px;
+  font-size: 52px;
   color: var(--pulse);
   background: var(--pulse-dim);
 }
 
-@media (max-width: 620px) {
-  .hero__main { flex-direction: column-reverse; align-items: flex-start; }
-  .hero__photo { width: 84px; height: 84px; border-radius: 12px; }
+@media (max-width: 760px) {
+  .hero__grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero__photo-wrap { order: -1; }
+  .hero__photo-frame { max-width: 220px; margin: 0 auto; }
+  .hero__photo-frame::before { top: 10px; left: -10px; }
 }
 
 .btn {

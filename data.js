@@ -7,7 +7,7 @@ const PROFILE = {
   role: "Data Analyst / Data Scientist / AI-ML Engineer",
   location: "Kathmandu, Nepal",
   status: "open to internships",
-  headline: "I build data pipelines and ML systems, then ship them as working products ,not notebooks.",
+  headline: "I build data pipelines and ML systems, then ship them as working products, not notebooks.",
   summary:
     "Final-year CSIT student in Kathmandu, focused on data science and machine learning. I've worked " +
     "through the whole pipeline myself:cleaning messy data, training models, wiring them into an API " +

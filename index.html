@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ronash Sharma </title>
+<title>Ronash Sharma</title>
 <meta name="description" content="Portfolio of Ronash Sharma — Data Science, Analytics, and AI/ML projects, resume, and contact.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -22,32 +22,35 @@
 </header>
 
 <main>
-  <!-- HERO: dataframe-row signature element -->
+  <!-- HERO: dataframe-row signature element + portrait photo panel -->
   <section class="hero">
-    <div class="hero__row" id="heroRow" aria-label="profile summary">
-      <span class="hero__field"><span class="hero__key">name</span><span class="hero__val" id="heroName">—</span></span>
-      <span class="hero__field"><span class="hero__key">role</span><span class="hero__val" id="heroRole">—</span></span>
-      <span class="hero__field"><span class="hero__key">location</span><span class="hero__val" id="heroLocation">—</span></span>
-      <span class="hero__field"><span class="hero__key">status</span><span class="hero__val hero__status" id="heroStatus">—<span class="cursor" aria-hidden="true"></span></span></span>
-    </div>
-    <h1 class="hero__headline" id="heroHeadline">Loading profile…</h1>
-    <div class="hero__main">
+    <div class="hero__grid">
       <div class="hero__text">
+        <div class="hero__row" id="heroRow" aria-label="profile summary">
+          <span class="hero__field"><span class="hero__key">name</span><span class="hero__val" id="heroName">—</span></span>
+          <span class="hero__field"><span class="hero__key">role</span><span class="hero__val" id="heroRole">—</span></span>
+          <span class="hero__field"><span class="hero__key">location</span><span class="hero__val" id="heroLocation">—</span></span>
+          <span class="hero__field"><span class="hero__key">status</span><span class="hero__val hero__status" id="heroStatus">—<span class="cursor" aria-hidden="true"></span></span></span>
+        </div>
+        <h1 class="hero__headline" id="heroHeadline">Loading profile…</h1>
         <p class="hero__summary" id="heroSummary"></p>
         <div class="hero__cta">
           <a href="#projects" class="btn btn--primary">See projects</a>
           <a href="#resume" class="btn btn--ghost">Get resume</a>
         </div>
       </div>
+
       <div class="hero__photo-wrap">
-        <img
-          id="heroPhoto"
-          class="hero__photo"
-          src="assets/profile.jpg"
-          alt="Ronash Sharma"
-          onerror="this.style.display='none'; document.getElementById('heroPhotoFallback').style.display='flex';"
-        />
-        <div id="heroPhotoFallback" class="hero__photo hero__photo--fallback">RS</div>
+        <div class="hero__photo-frame">
+          <img
+            id="heroPhoto"
+            class="hero__photo"
+            src="assets/profile.jpg"
+            alt="Ronash Sharma"
+            onerror="this.style.display='none'; document.getElementById('heroPhotoFallback').style.display='flex';"
+          />
+          <div id="heroPhotoFallback" class="hero__photo hero__photo--fallback">RS</div>
+        </div>
       </div>
     </div>
   </section>
@@ -70,7 +73,7 @@
   <section id="resume" class="section-band section section--tight">
     <p class="section__label"># documents</p>
     <h2 class="section__title">Resume &amp; CV</h2>
-    <p class="section__note">Resume is the 1-page ATS-tailored version ,send this by default. CV is the full-length version with complete history.</p>
+    <p class="section__note">Resume is the 1-page ATS-tailored version — send this by default. CV is the full-length version with complete history.</p>
     <div class="docs__row">
       <a href="assets/Ronash_Sharma_Resume.pdf" class="doc-card" download>
         <span class="doc-card__label">Resume</span>
