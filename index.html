@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ronash Sharma</title>
+<title>Ronash Sharma </title>
 <meta name="description" content="Portfolio of Ronash Sharma — Data Science, Analytics, and AI/ML projects, resume, and contact.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -31,10 +31,24 @@
       <span class="hero__field"><span class="hero__key">status</span><span class="hero__val hero__status" id="heroStatus">—<span class="cursor" aria-hidden="true"></span></span></span>
     </div>
     <h1 class="hero__headline" id="heroHeadline">Loading profile…</h1>
-    <p class="hero__summary" id="heroSummary"></p>
-    <div class="hero__cta">
-      <a href="#projects" class="btn btn--primary">See projects</a>
-      <a href="#resume" class="btn btn--ghost">Get resume</a>
+    <div class="hero__main">
+      <div class="hero__text">
+        <p class="hero__summary" id="heroSummary"></p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">See projects</a>
+          <a href="#resume" class="btn btn--ghost">Get resume</a>
+        </div>
+      </div>
+      <div class="hero__photo-wrap">
+        <img
+          id="heroPhoto"
+          class="hero__photo"
+          src="assets/profile.jpg"
+          alt="Ronash Sharma"
+          onerror="this.style.display='none'; document.getElementById('heroPhotoFallback').style.display='flex';"
+        />
+        <div id="heroPhotoFallback" class="hero__photo hero__photo--fallback">RS</div>
+      </div>
     </div>
   </section>
 
