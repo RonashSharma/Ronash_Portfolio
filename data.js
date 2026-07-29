@@ -25,8 +25,9 @@ const PROJECTS = [
     title: "RAG Document Q&A Assistant",
     tag: "flagship",
     description:
-      "A Retrieval-Augmented Generation (RAG) system built end-to-end: PDF ingestion, chunking, local embeddings, vector search, and grounded LLM generation, wrapped in a FastAPI backend and a Streamlit frontend."+
-      " Built and tested against the Constitution of Nepal (240 pages, 875 indexed chunks) as a real-world document.",
+      "Built an end-to-end Retrieval-Augmented Generation (RAG) system that lets users upload PDF documents and ask natural-language questions grounded in the document content." +
+      "Developed a FastAPI backend with semantic search using Sentence Transformers and ChromaDB, integrated Gemini for answer generation," 
+      +"and created a Streamlit interface that returns responses with source-page citations for transparent, document-based answers.",
     stack: ["Python", "FastAPI", "Streamlit", "Gemini 2.5 Flash", "PYDF"],
     link: "https://github.com/RonashSharma/RAG_Document_QA_Assistant",
   },
