@@ -22,6 +22,15 @@ const PROFILE = {
 // List your real, public projects only. Order = display order (best first).
 const PROJECTS = [
   {
+    title: "RAG Document Q&A Assistant",
+    tag: "flagship",
+    description:
+      "A Retrieval-Augmented Generation (RAG) system built end-to-end: PDF ingestion, chunking, local embeddings, vector search, and grounded LLM generation, wrapped in a FastAPI backend and a Streamlit frontend."+
+      " Built and tested against the Constitution of Nepal (240 pages, 875 indexed chunks) as a real-world document.",
+    stack: ["Python", "FastAPI", "Streamlit,Gemini 2.5 Flash,PYDF"],
+    link: "https://github.com/RonashSharma/RAG_Document_QA_Assistant",
+  },
+  {
     title: "Customer Churn Prediction System",
     tag: "flagship",
     description:
@@ -89,7 +98,7 @@ const SKILLS = [
   },
   {
     group: "AI & LLM",
-    items: ["LLM App Development", "Google Gemini API", "Prompt Engineering"],
+    items: ["LLM App Development", "Google Gemini API", "Prompt Engineering", "RAG Systems"],
   },
   {
     group: "Data Visualization",
