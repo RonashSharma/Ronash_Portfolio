@@ -27,7 +27,7 @@ const PROJECTS = [
     description:
       "A Retrieval-Augmented Generation (RAG) system built end-to-end: PDF ingestion, chunking, local embeddings, vector search, and grounded LLM generation, wrapped in a FastAPI backend and a Streamlit frontend."+
       " Built and tested against the Constitution of Nepal (240 pages, 875 indexed chunks) as a real-world document.",
-    stack: ["Python", "FastAPI", "Streamlit,Gemini 2.5 Flash,PYDF"],
+    stack: ["Python", "FastAPI", "Streamlit", "Gemini 2.5 Flash", "PYDF"],
     link: "https://github.com/RonashSharma/RAG_Document_QA_Assistant",
   },
   {
