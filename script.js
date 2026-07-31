@@ -1,7 +1,4 @@
 // script.js
-// Reads PROFILE / PROJECTS / SKILLS from data.js and renders the page.
-// You should never need to edit this file when updating content — edit data.js instead.
-
 function renderHero() {
   document.getElementById("heroName").textContent = PROFILE.name;
   document.getElementById("heroRole").textContent = PROFILE.role;
