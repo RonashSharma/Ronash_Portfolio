@@ -30,7 +30,7 @@ const PROJECTS = [
   },
   {
     title: "Customer Churn Prediction System",
-    tag: "AI/ML:Data Analyst",
+    tag: "AI/ML:Data Analysis",
     description:
       "Built a full churn-prediction pipeline from scratch: cleaned and prepped raw customer data, " +
       "trained a Random Forest to flag who's likely to leave, then wrapped it in a Streamlit app that " +
