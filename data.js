@@ -1,7 +1,4 @@
 // data.js
-// Edit THIS file to update the site. No other file needs to change.
-// After editing: git add, commit, push — Vercel redeploys automatically.
-
 const PROFILE = {
   name: "Ronash Sharma",
   role: "Data Analyst / Data Scientist / AI-ML Engineer",
